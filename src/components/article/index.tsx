@@ -1,7 +1,6 @@
 import styles from './index.module.scss';
 import moment from 'moment';
 import Props from '../types';
-import Image from 'next/image';
 
 const Article: React.FC<Props> = ({ articles, title }) => {
   return (
