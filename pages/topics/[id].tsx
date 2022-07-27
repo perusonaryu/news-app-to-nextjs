@@ -41,7 +41,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: { params: any }) {
-    // console.log(params.id);
   const topicRes = await fetch(
     `${process.env.NEXT_PUBLIC_NEWS_URL}?country=jp&category=${params.id}&apiKey=${process.env.NEXT_PUBLIC_NEWS_API}`
   );
